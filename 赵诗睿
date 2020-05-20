@@ -1,0 +1,40 @@
+
+<html>
+<body>
+
+<h2>JavaScript 能做什么</h2>
+<meta http-equiv="content-type" content="text/heml; charset=utf-8">
+
+<p id="demo">JavaScript 能够改变 HTML 内容。</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>点击我！</button>
+
+
+<h2>JavaScript 能做什么</h2>
+
+<p id="demo">JavaScript 能够隐藏 HTML 元素。</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='none'">
+点击我！
+</button>
+<h2>JavaScript 能够做什么</h2>
+
+<p>JavaScript 能够显示隐藏的 HTML 元素。</p>
+
+<p id="demo" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='block'">
+点击我！
+</button>
+<h1>我的第一张网页</h1>
+
+<p>我的第一个段落</p>
+
+<p id="demo"></p>
+
+
+<script>
+    window.alert(5 + 6);
+    </script>
+</body>
+</html>
