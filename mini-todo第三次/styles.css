@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(180, 213, 233);
+    display: flex;
+    justify-content: center;
+    }
+.todo-panel{
+        border: 1px solid;
+        width: 500px;
+        min-height: 15em;
+        margin: 2em;
+        box-shadow: 8px 8px 8px #888
+    }
+.todo-editor{
+        display: flex;
+        margin:  12px;
+    }
+.todo-editor button{
+        margin: 1px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+.todo-editor input{
+       flex-grow: 1;
+       font-size: 1.2em;
+       padding: 3px 20px ;
+        margin: 1px;
+    }
+.todo-items{
+        border: 1px solid rgb(0, 0, 0);
+        width: 460px;
+        min-height: 17em;
+        margin: 1em;   
+    }
+.todo-items > .task{
+        display: flex;
+        align-items: center;
+    }
+.todo-items > .task > label{
+        flex-grow:1 ;
+    }
