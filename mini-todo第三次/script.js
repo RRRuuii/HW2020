@@ -58,3 +58,41 @@ function rendertask() {
         xiangmuEl.append(ctrlEl);
     }
 }
+function rendercontrl(tasks, taskidx){
+    let ctrlEl = document.createElement("div");
+   ctrlEl.className = "contrl";
+
+   let upEl = document.createElement("button");
+if(taskidx === 0){
+upEl.disabled = true;
+          }
+      upEl.innerText = "↿";
+      ctrlEl.append(upEl);
+      upEl.onclick = () => {
+         let news;
+         news = tasks[taskidx];
+         tasks[taskidx] = tasks[taskidx-1];
+         tasks[taskidx-1] = news;
+         rendertask();
+      }
+      let downEl = document.createElement("button");
+      downEl.innerText = "⇂";
+      ctrlEl.append(downEl);
+      downEl.onclick = () => {
+          let news;
+         news = tasks[taskidx];
+         tasks[taskidx] = tasks[taskidx+1];
+         tasks[taskidx+1] = news;
+         rendertask();
+      }
+      let bottEl = document.createElement("button");
+      bottEl.innerText = "✖";
+      bottEl.onclick = () => {
+          tasks.splice(taskidx, 1);   
+          rendertask();
+      };
+      ctrlEl.append(bottEl);   
+return ctrlEl;
+}
+renderEditor();
+rendertask();

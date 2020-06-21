@@ -38,3 +38,23 @@ body {
 .todo-items > .task > label{
         flex-grow:1 ;
     }
+    .todo-items .contrl > button{
+        border: none;
+        background: none;
+        color: black;
+        cursor: pointer;
+    }
+.todo-items .contrl > button:disabled{
+        border: none;
+        background: none;
+        color:black;
+    }
+.todo-items .contrl > button:disabled:hover {
+        font-weight: unset;
+    }
+.todo-items .contrl > button:hover {
+    font-weight: bolder;
+     }
+.task.done > label{
+    text-decoration: line-through;
+     }
